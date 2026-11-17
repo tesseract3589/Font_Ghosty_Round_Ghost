@@ -1,0 +1,16 @@
+{
+  "version": "1.700",
+  "syllables_checked": 11172,
+  "stroke_width_units": 100,
+  "emitted_stroke_widths": [
+    100
+  ],
+  "paired_consonant_gap_units": 32,
+  "paired_gap_min": 31.999969482421875,
+  "paired_gap_max": 32.000030517578125,
+  "unique_component_pairs_checked": 3930,
+  "component_overlaps": [],
+  "counter_probes_checked": 150,
+  "blocked_counter_probes": [],
+  "focus_characters": "갋 값 밟 넓 짧 닭 읽 삶 앉 많 싫 흙"
+}

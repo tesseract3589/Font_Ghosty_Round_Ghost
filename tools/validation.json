@@ -1,0 +1,66 @@
+{
+  "font": "GhostyRoundGhost-Regular.ttf",
+  "family": "고스티 동글유령체",
+  "version": "1.700",
+  "license": "Unlicense",
+  "embedding_restrictions": 0,
+  "standard_dot_diameter": 150,
+  "dot_glyphs_checked": 15,
+  "reference_characters": 3022,
+  "reference_coverage_missing": [],
+  "encoded_characters": 11490,
+  "modern_hangul_syllables": 11172,
+  "hangul_nfd_equivalence_checked": 11172,
+  "hangul_nfd_mismatches": 0,
+  "blank_nonspace_characters": [],
+  "glyphs": 11739,
+  "native_raster_size": 24,
+  "native_raster_blank_characters": [],
+  "rendering": "grayscale antialiasing; scalable rounded outlines",
+  "minimum_y": -190,
+  "maximum_y": 969,
+  "ghost_ornaments": {
+    "U+2664": "outline",
+    "U+2667": "floating",
+    "U+2020": "solid",
+    "U+2021": "sparkle",
+    "U+00A3": "half",
+    "U+00A2": "flame"
+  },
+  "styles": [
+    "Regular"
+  ],
+  "variable_axes": [],
+  "shaping_samples": [
+    {
+      "text": "안녕! 고스티 동글유령체",
+      "glyph_count": 13,
+      "missing": 0
+    },
+    {
+      "text": "꽃 빛 꿈 별 꼬리 불꽃",
+      "glyph_count": 13,
+      "missing": 0
+    },
+    {
+      "text": "똠 쀍 뷁 힣",
+      "glyph_count": 7,
+      "missing": 0
+    },
+    {
+      "text": "고스티",
+      "glyph_count": 3,
+      "missing": 0
+    },
+    {
+      "text": "ABC xyz 0123456789",
+      "glyph_count": 18,
+      "missing": 0
+    },
+    {
+      "text": "♤ ♧ † ‡ £ ¢",
+      "glyph_count": 11,
+      "missing": 0
+    }
+  ]
+}
