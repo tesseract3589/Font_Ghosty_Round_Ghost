@@ -13,6 +13,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"tools"))
 import build_ghosty_font as builder
 from preview_ghosty_font import specimen
+import preview_ghosty_font as previews
 from PIL import ImageFont
 
 
@@ -21,6 +22,19 @@ class FontTests(unittest.TestCase):
         manifest=json.loads((builder.SOURCE/"reference_coverage.json").read_text(encoding="utf-8"))
         with contextlib.redirect_stdout(io.StringIO()):
             builder.verify(ROOT/"GhostyRoundGhost-Regular.ttf",manifest)
+
+    def test_preview_outputs_are_exactly_the_five_distribution_images(self):
+        old_out=previews.OUT
+        with tempfile.TemporaryDirectory() as directory:
+            destination=Path(directory)
+            (destination/"GhostyRoundGhost-Regular.ttf").write_bytes((ROOT/"GhostyRoundGhost-Regular.ttf").read_bytes())
+            try:
+                previews.OUT=destination
+                with contextlib.redirect_stdout(io.StringIO()):
+                    previews.main()
+                self.assertEqual({p.name for p in (destination/"preview").iterdir()},set(previews.PREVIEW_FILES))
+            finally:
+                previews.OUT=old_out
 
     def test_vowel_stems_in_final_syllables(self):
         font=builder.TTFont(ROOT/"GhostyRoundGhost-Regular.ttf")
